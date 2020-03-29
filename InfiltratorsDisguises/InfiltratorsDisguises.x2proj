@@ -33,7 +33,13 @@
     <Content Include="Config\XComEngine.ini" />
     <Content Include="Config\XComGame.ini" />
     <Content Include="Localization\InfiltratorsDisguises.int" />
+    <Content Include="Src\InfiltratorsDisguises\Classes\X2Ability_DisguiseAbilitySet.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\InfiltratorsDisguises\Classes\X2DownloadableContentInfo_InfiltratorsDisguises.uc" />
+    <Content Include="Src\InfiltratorsDisguises\Classes\X2Item_Disguises.uc">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
   <!-- The weird stuff below (until Target) is required or otherwise ModBuddy project breaks ¯\_(ツ)_/¯ P.S. Also don't try to make it more sane -->
   <PropertyGroup>
