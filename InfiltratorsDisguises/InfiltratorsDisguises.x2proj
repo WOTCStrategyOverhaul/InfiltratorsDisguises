@@ -18,6 +18,15 @@
     <Folder Include="Src\InfiltratorsDisguises\Classes\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\StratCovert_Plt.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\StratCovert_Pwr.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\UILibrary_DisguiseIcons.upk">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ReadMe.txt" />
     <Content Include="ModPreview.jpg" />
     <Content Include="Config\XComEditor.ini" />
