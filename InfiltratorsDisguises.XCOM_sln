@@ -5,13 +5,20 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "InfiltratorsDisguises", "InfiltratorsDisguises\InfiltratorsDisguises.x2proj", "{0D05A518-4159-4E47-B8B2-CC081FEBD276}"
 EndProject
+Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "X2WOTCCommunityHighlander", "X2WOTCCommunityHighlander\X2WOTCCommunityHighlander\X2WOTCCommunityHighlander.x2proj", "{D8026E40-05DA-4006-8708-C36137E37D8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|XCOM 2 = Debug|XCOM 2
 		Default|XCOM 2 = Default|XCOM 2
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D05A518-4159-4E47-B8B2-CC081FEBD276}.Debug|XCOM 2.ActiveCfg = Debug|XCOM 2
+		{0D05A518-4159-4E47-B8B2-CC081FEBD276}.Debug|XCOM 2.Build.0 = Debug|XCOM 2
 		{0D05A518-4159-4E47-B8B2-CC081FEBD276}.Default|XCOM 2.ActiveCfg = Default|XCOM 2
 		{0D05A518-4159-4E47-B8B2-CC081FEBD276}.Default|XCOM 2.Build.0 = Default|XCOM 2
+		{D8026E40-05DA-4006-8708-C36137E37D8B}.Debug|XCOM 2.ActiveCfg = Debug|XCOM 2
+		{D8026E40-05DA-4006-8708-C36137E37D8B}.Default|XCOM 2.ActiveCfg = Default|XCOM 2
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
