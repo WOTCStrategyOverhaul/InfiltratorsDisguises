@@ -7,6 +7,7 @@
 
 class X2Ability_DisguiseAbilitySet extends X2Ability_ItemGrantedAbilitySet config(GameCore);
 
+var config int CIVILIAN_DISGUISE_HEALTH_BONUS;
 var config int CIVILIAN_DISGUISE_MOBILITY_BONUS;
 var config float CIVILIAN_DISGUISE_DETECTION_MODIFIER;
 
@@ -56,6 +57,7 @@ static function X2AbilityTemplate CivilianDisguiseStats()
 
 	PersistentStatChangeEffect = new class'X2Effect_PersistentStatChange';
 	PersistentStatChangeEffect.BuildPersistentEffect(1, true, false, false);
+	PersistentStatChangeEffect.AddPersistentStatChange(eStat_HP, default.CIVILIAN_DISGUISE_HEALTH_BONUS);
 	PersistentStatChangeEffect.AddPersistentStatChange(eStat_Mobility, default.CIVILIAN_DISGUISE_MOBILITY_BONUS);
 	PersistentStatChangeEffect.AddPersistentStatChange(eStat_DetectionModifier, default.CIVILIAN_DISGUISE_DETECTION_MODIFIER);
 
