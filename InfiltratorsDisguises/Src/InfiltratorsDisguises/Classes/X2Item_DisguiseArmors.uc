@@ -5,7 +5,7 @@
 //  WOTCStrategyOverhaul Team
 //---------------------------------------------------------------------------------------
 
-class X2Item_Disguises extends X2Item_DefaultArmors;
+class X2Item_DisguiseArmors extends X2Item_DefaultArmors;
 
 static function array<X2DataTemplate> CreateTemplates()
 {
@@ -25,9 +25,8 @@ static function X2DataTemplate CreateCivilianDisguise()
 	`CREATE_X2TEMPLATE(class'X2ArmorTemplate', Template, 'CivilianDisguise');
 	Template.strImage = "img:///UILibrary_DisguiseIcons.X2InventoryIcons.Inv_Disguise_Civilian";
 	Template.StartingItem = false;
-	Template.CanBeBuilt = true;
-	Template.TradingPostValue = 2;
-	Template.bInfiniteItem = false;
+	Template.CanBeBuilt = false;
+	Template.bInfiniteItem = true;
 	Template.Abilities.AddItem('CivilianDisguiseStats');
 	Template.Abilities.AddItem('Phantom');
 	Template.ArmorTechCat = 'conventional';
@@ -35,8 +34,10 @@ static function X2DataTemplate CreateCivilianDisguise()
 	Template.Tier = 0;
 	Template.AkAudioSoldierArmorSwitch = 'Conventional';
 	Template.EquipSound = "StrategyUI_Armor_Equip_Conventional";
+	
+	Template.CreatorTemplateName = 'CivilianDisguise_Schematic';
 
-	Template.SetUIStatMarkup(class'XLocalizedData'.default.HealthLabel, eStat_HP, 0, true);
+	Template.SetUIStatMarkup(class'XLocalizedData'.default.HealthLabel, eStat_HP, class'X2Ability_DisguiseAbilitySet'.default.CIVILIAN_DISGUISE_HEALTH_BONUS , true);
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, class'X2Ability_DisguiseAbilitySet'.default.CIVILIAN_DISGUISE_MOBILITY_BONUS);
 
 	return Template;
@@ -50,10 +51,8 @@ static function X2DataTemplate CreateAdventDisguise()
 	Template.strImage = "img:///UILibrary_DisguiseIcons.X2InventoryIcons.Inv_Disguise_Advent";
 	Template.ItemCat = 'armor';
 	Template.StartingItem = false;
-	Template.CanBeBuilt = true;
-	Template.bInfiniteItem = false;
-	Template.TradingPostValue = 3;
-	Template.PointsToComplete = 0;
+	Template.CanBeBuilt = false;
+	Template.bInfiniteItem = true;
 	Template.Abilities.AddItem('AdventDisguiseStats');
 	Template.Abilities.AddItem('Phantom');
 	Template.ArmorTechCat = 'plated';
@@ -61,6 +60,9 @@ static function X2DataTemplate CreateAdventDisguise()
 	Template.Tier = 1;
 	Template.AkAudioSoldierArmorSwitch = 'Predator';
 	Template.EquipSound = "StrategyUI_Armor_Equip_Conventional";
+	
+	Template.CreatorTemplateName = 'AdventDisguise_Schematic';
+	Template.BaseItem = 'CivilianDisguise';
 
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.HealthLabel, eStat_HP, class'X2Ability_DisguiseAbilitySet'.default.ADVENT_DISGUISE_HEALTH_BONUS, true);
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, class'X2Ability_DisguiseAbilitySet'.default.ADVENT_DISGUISE_MOBILITY_BONUS);
@@ -76,10 +78,8 @@ static function X2DataTemplate CreateHolographicDisguise()
 	Template.strImage = "img:///UILibrary_DisguiseIcons.X2InventoryIcons.Inv_Disguise_Holo";
 	Template.ItemCat = 'armor';
 	Template.StartingItem = false;
-	Template.CanBeBuilt = true;
-	Template.bInfiniteItem = false;
-	Template.TradingPostValue = 6;
-	Template.PointsToComplete = 0;
+	Template.CanBeBuilt = false;
+	Template.bInfiniteItem = true;
 	Template.Abilities.AddItem('HolographicDisguiseStats');
 	Template.Abilities.AddItem('Phantom');
 	Template.ArmorTechCat = 'powered';
@@ -87,6 +87,9 @@ static function X2DataTemplate CreateHolographicDisguise()
 	Template.Tier = 3;
 	Template.AkAudioSoldierArmorSwitch = 'Warden';
 	Template.EquipSound = "StrategyUI_Armor_Equip_Powered";
+	
+	Template.CreatorTemplateName = 'HolographicDisguise_Schematic';
+	Template.BaseItem = 'AdventDisguise';
 
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.HealthLabel, eStat_HP, class'X2Ability_DisguiseAbilitySet'.default.HOLOGRAPHIC_DISGUISE_HEALTH_BONUS, true);
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, class'X2Ability_DisguiseAbilitySet'.default.HOLOGRAPHIC_DISGUISE_MOBILITY_BONUS);

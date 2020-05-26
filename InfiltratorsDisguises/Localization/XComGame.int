@@ -15,3 +15,12 @@ FriendlyName="Holographic Disguise"
 FriendlyNamePlural="Holographic Disguises"
 BriefSummary="Utilizing advanced holographic technology, this new disguise will provide unmatched stealth capability to our operatives without compromising on survivability or mobility."
 TacticalText="<Bullet/> The Holographic Disguise makes a soldier nearly impossible to detect by enemy forces and shortens infiltration time.\n<Bullet/> This disguise also contains ADVENT transponders, allowing the soldier passage underneath ADVENT security towers.\n<Bullet/> The nanoweave outer shell of the Holographic disguise grants protection superior to the ADVENT disguise, while retaining the mobility of the Civilian Disguise."
+
+[CivilianDisguise_Schematic X2SchematicTemplate]
+m_strClassLabel="SQUAD"
+
+[AdventDisguise_Schematic X2SchematicTemplate]
+m_strClassLabel="SQUAD"
+
+[HolographicDisguise_Schematic X2SchematicTemplate]
+m_strClassLabel="SQUAD"

@@ -27,6 +27,9 @@
     <Content Include="Config\XComInfiltration.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Config\XComStrategyTuning.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Content\StratCovert_Plt.upk">
       <SubType>Content</SubType>
     </Content>
@@ -49,7 +52,10 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\InfiltratorsDisguises\Classes\X2DownloadableContentInfo_InfiltratorsDisguises.uc" />
-    <Content Include="Src\InfiltratorsDisguises\Classes\X2Item_Disguises.uc">
+    <Content Include="Src\InfiltratorsDisguises\Classes\X2Item_DisguiseArmors.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\InfiltratorsDisguises\Classes\X2Item_DisguiseSchematics.uc">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
