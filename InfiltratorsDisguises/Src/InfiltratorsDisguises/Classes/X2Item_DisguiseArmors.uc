@@ -39,7 +39,13 @@ static function X2DataTemplate CreateCivilianDisguise()
 
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.HealthLabel, eStat_HP, class'X2Ability_DisguiseAbilitySet'.default.CIVILIAN_DISGUISE_HEALTH_BONUS , true);
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, class'X2Ability_DisguiseAbilitySet'.default.CIVILIAN_DISGUISE_MOBILITY_BONUS);
-
+	
+	if (!class'IDHelpers'.static.IsDLCLoaded('CovertInfiltration'))
+	{
+		Template.Abilities.AddItem('Stealth');
+	
+	}
+	
 	return Template;
 }
 
@@ -66,7 +72,13 @@ static function X2DataTemplate CreateAdventDisguise()
 
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.HealthLabel, eStat_HP, class'X2Ability_DisguiseAbilitySet'.default.ADVENT_DISGUISE_HEALTH_BONUS, true);
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, class'X2Ability_DisguiseAbilitySet'.default.ADVENT_DISGUISE_MOBILITY_BONUS);
-
+	
+	if (!class'IDHelpers'.static.IsDLCLoaded('CovertInfiltration'))
+	{
+		Template.Abilities.AddItem('Stealth');
+	
+	}
+	
 	return Template;
 }
 
@@ -93,7 +105,13 @@ static function X2DataTemplate CreateHolographicDisguise()
 
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.HealthLabel, eStat_HP, class'X2Ability_DisguiseAbilitySet'.default.HOLOGRAPHIC_DISGUISE_HEALTH_BONUS, true);
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.MobilityLabel, eStat_Mobility, class'X2Ability_DisguiseAbilitySet'.default.HOLOGRAPHIC_DISGUISE_MOBILITY_BONUS);
-
+	
+	if (!class'IDHelpers'.static.IsDLCLoaded('CovertInfiltration'))
+	{
+		Template.Abilities.AddItem('Stealth');
+	
+	}
+	
 	return Template;
 }
 
