@@ -43,7 +43,6 @@ static function X2DataTemplate CreateCivilianDisguise()
 	if (!class'IDHelpers'.static.IsDLCLoaded('CovertInfiltration'))
 	{
 		Template.Abilities.AddItem('Stealth');
-	
 	}
 	
 	return Template;
@@ -76,7 +75,6 @@ static function X2DataTemplate CreateAdventDisguise()
 	if (!class'IDHelpers'.static.IsDLCLoaded('CovertInfiltration'))
 	{
 		Template.Abilities.AddItem('Stealth');
-	
 	}
 	
 	return Template;
@@ -109,7 +107,6 @@ static function X2DataTemplate CreateHolographicDisguise()
 	if (!class'IDHelpers'.static.IsDLCLoaded('CovertInfiltration'))
 	{
 		Template.Abilities.AddItem('Stealth');
-	
 	}
 	
 	return Template;
