@@ -13,6 +13,7 @@
     <Folder Include="Config\" />
     <Folder Include="Content\" />
     <Folder Include="Localization\" />
+    <Folder Include="Localization\RUS" />
     <Folder Include="Src\" />
     <Folder Include="Src\InfiltratorsDisguises\" />
     <Folder Include="Src\InfiltratorsDisguises\Classes\" />
@@ -40,6 +41,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Content\UILibrary_DisguiseIcons.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\RUS\InfiltratorsDisguises.rus">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\RUS\XComGame.rus">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Localization\XComGame.int">
