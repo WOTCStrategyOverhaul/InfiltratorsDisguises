@@ -31,7 +31,7 @@ static function X2DataTemplate CreateCivilianDisguiseSchematic()
 	Template.OnBuiltFn = UpgradeItems;
 
 	Template.ReferenceItemTemplate = 'CivilianDisguise';
-	Template.HideIfPurchased = 'AdventDisguise';
+	Template.HideIfPurchased = 'HolographicDisguise';
 
 	return Template;
 }
