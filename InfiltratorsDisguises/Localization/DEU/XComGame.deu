@@ -1,0 +1,26 @@
+[CivilianDisguise X2ArmorTemplate]
+FriendlyName="Zivilisten-Verkleidung"
+FriendlyNamePlural="Zivilisten-Verkleidungen"
+BriefSummary="Diese zivile Kleidung bietet unseren Soldaten eine einfache, aber effektive Möglichkeit sich zu verkleiden. ADVENT-Truppen werden sie darin schwer entdecken, der leichte Stoff bietet aber überhaupt keinen Schutz."
+TacticalText="<Bullet/> Die Zivilisten-Verkleidung macht es schwerer die Einheit zu entdecken, und reduziert ihre Infiltrationszeit.\n<Bullet/> Die Kleidung ist sehr leicht und erhöht die Mobilität der Einheit, bietet aber keinen Schutz. Gegnerkontakt sollte vermieden werden."
+
+[AdventDisguise X2ArmorTemplate]
+FriendlyName="ADVENT-Verkleidung"
+FriendlyNamePlural="ADVENT-Verkleidungen"
+BriefSummary="Durch Daten aus den ADVENT-Implantaten können wir unsere Soldaten als ADVENT-Truppen verkleiden. Überwachungssysteme werden durch den integrierten Neuralsender komplett getäuscht, aber gegnerische Truppen werden auf nähere Distanz trotzdem bemerken dass etwas seltsam ist."
+TacticalText="<Bullet/> Die ADVENT-Verkleidung macht es merklich schwerer die Einheit zu entdecken, und reduziert ihre Infiltrationszeit.\n<Bullet/> Die eingebauten Sender verbergen sie zudem vor ADVENT-Sicherheitstürmen.\n<Bullet/> Die wiederbenutzte Stahl- und Legierungsrüstung von ADVENT bietet mehr Schutz als zivile Kleidung."
+
+[HolographicDisguise X2ArmorTemplate]
+FriendlyName="Hologramm-Verkleidung"
+FriendlyNamePlural="Hologramm-Verkleidungen"
+BriefSummary="Durch den Einsatz modernster holographischer Technik gibt dieser Anzug unseren Soldaten die beste Tarnung, ohne ihre Mobilität einzuschränken oder ihren Schutz zu vernachlässigen."
+TacticalText="<Bullet/> Die Hologramm-Verkleidung macht es extrem schwer für Gegner die Einheit zu entdecken, und reduziert ihre Infiltrationszeit.\n<Bullet/> Die eingebauten Sender verbergen sie zudem vor ADVENT-Sicherheitstürmen.\n<Bullet/> Der emissionslose und superleichte Nanogeflecht-Anzug under der Verkleidung ist stärker als ADVENT-Rüstung und erlaubt der Einheit gleichzeitig erhöhte Mobilität."
+
+[CivilianDisguise_Schematic X2SchematicTemplate]
+m_strClassLabel="TRUPP"
+
+[AdventDisguise_Schematic X2SchematicTemplate]
+m_strClassLabel="TRUPP"
+
+[HolographicDisguise_Schematic X2SchematicTemplate]
+m_strClassLabel="TRUPP"
