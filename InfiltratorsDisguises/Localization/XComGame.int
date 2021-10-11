@@ -16,6 +16,12 @@ FriendlyNamePlural="Holographic Disguises"
 BriefSummary="Utilizing advanced holographic technology, this new disguise will provide unmatched stealth capability to our operatives without compromising on survivability or mobility."
 TacticalText="<Bullet/> The Holographic Disguise makes a soldier nearly impossible to detect by enemy forces and shortens infiltration time.\n<Bullet/> This disguise also contains ADVENT transponders, allowing the soldier passage underneath ADVENT security towers.\n<Bullet/> The nanoweave outer shell of the Holographic disguise grants protection superior to the ADVENT disguise, while retaining the mobility of the Civilian Disguise."
 
+[Unprotected X2AbilityTemplate]
+LocFriendlyName="Unprotected"
+LocFlyOverText="Unprotected"
+LocHelpText="When taking damage, this soldier has a 50% chance to immediately fall unconscious."
+LocLongDescription="This soldier isn't wearing any armour to mitigate pain and blood loss. When taking damage, they have a 50% chance to immediately fall unconscious."
+
 [CivilianDisguise_Schematic X2SchematicTemplate]
 m_strClassLabel="SQUAD"
 

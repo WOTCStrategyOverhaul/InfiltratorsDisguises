@@ -19,6 +19,8 @@ var config int HOLOGRAPHIC_DISGUISE_HEALTH_BONUS;
 var config int HOLOGRAPHIC_DISGUISE_MOBILITY_BONUS;
 var config float HOLOGRAPHIC_DISGUISE_DETECTION_MODIFIER;
 
+var config int UNPROTECTED_UNCONSCIOUS_CHANCE;
+
 var localized string strTowerDetectionImmunityName;
 var localized string strTowerDetectionImmunityDesc;
 
@@ -29,6 +31,8 @@ static function array<X2DataTemplate> CreateTemplates()
 	Templates.AddItem(CivilianDisguiseStats());
 	Templates.AddItem(AdventDisguiseStats());
 	Templates.AddItem(HolographicDisguiseStats());
+	
+	Templates.AddItem(UnprotectedAbility());
 
 	return Templates;
 }
@@ -134,6 +138,46 @@ static function X2AbilityTemplate HolographicDisguiseStats()
 	Template.AddTargetEffect(CreateTowerDetectionImmunityDisplayEffect());
 
 	Template.BuildNewGameStateFn = TypicalAbility_BuildGameState;
+
+	return Template;
+}
+
+static function X2AbilityTemplate UnprotectedAbility()
+{
+	local X2AbilityTemplate                 Template;	
+	local X2AbilityTrigger_EventListener	EventListener;
+	local X2AbilityToHitCalc_PercentChance	PercentChance;
+	local X2Effect_Persistent				UnconsciousEffect;
+
+	`CREATE_X2ABILITY_TEMPLATE(Template, 'Unprotected');
+	Template.IconImage = ""; // TODO: need a suitable icon
+	
+	Template.AbilityTargetStyle = default.SelfTarget;
+
+	PercentChance = new class'X2AbilityToHitCalc_PercentChance';
+	PercentChance.PercentToHit = default.UNPROTECTED_UNCONSCIOUS_CHANCE;
+	Template.AbilityToHitCalc = PercentChance;
+	
+	EventListener = new class'X2AbilityTrigger_EventListener';
+	EventListener.ListenerData.Deferral = ELD_OnStateSubmitted;
+	EventListener.ListenerData.EventID = 'UnitTakeEffectDamage';
+	EventListener.ListenerData.EventFn = class'XComGameState_Ability'.static.AbilityTriggerEventListener_Self;
+	EventListener.ListenerData.Filter = eFilter_Unit;
+	Template.AbilityTriggers.AddItem(EventListener);
+	
+	UnconsciousEffect = class'X2StatusEffects'.static.CreateUnconsciousStatusEffect();
+	Template.AddTargetEffect(UnconsciousEffect);
+	
+	Template.eAbilityIconBehaviorHUD = EAbilityIconBehavior_NeverShow;
+	Template.Hostility = eHostility_Neutral;
+	Template.bDisplayInUITacticalText = true;
+	Template.bDontDisplayInAbilitySummary = false;
+	Template.AbilitySourceName = 'eAbilitySource_Item';
+	Template.bSkipFireAction = true;
+
+	Template.BuildNewGameStateFn = TypicalAbility_BuildGameState;
+	Template.BuildVisualizationFn = TypicalAbility_BuildVisualization;
+	// TODO: show popup with LocFlyOverText when triggered
 
 	return Template;
 }
