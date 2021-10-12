@@ -149,7 +149,7 @@ static function X2AbilityTemplate UnprotectedAbility()
 	local X2AbilityToHitCalc_PercentChance	PercentChance;
 	local X2Effect_Persistent				UnconsciousEffect;
 
-	`CREATE_X2ABILITY_TEMPLATE(Template, 'Unprotected');
+	`CREATE_X2ABILITY_TEMPLATE(Template, 'ID_Unprotected');
 	Template.IconImage = ""; // TODO: need a suitable icon
 	
 	Template.AbilityTargetStyle = default.SelfTarget;
