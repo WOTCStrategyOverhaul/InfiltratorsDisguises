@@ -26,3 +26,22 @@ static function GetNumUtilitySlotsOverride (out int NumUtilitySlots, XComGameSta
 		}
 	}
 }
+
+static function bool AbilityTagExpandHandler(string InString, out string OutString)
+{
+	local name TagText;
+    
+	TagText = name(InString);
+
+	switch (TagText)
+	{
+	case 'UNPROTECTED_DAMAGE_CHANCE':
+		OutString = string(class'X2Ability_DisguiseAbilitySet'.default.UNPROTECTED_DAMAGE_CHANCE);
+		return true;
+	case 'UNPROTECTED_DAMAGE_AMOUNT':
+		OutString = string(class'X2Ability_DisguiseAbilitySet'.default.UNPROTECTED_DAMAGE_AMOUNT);
+		return true;
+	default: 
+		return false;
+	}
+}

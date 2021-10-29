@@ -28,6 +28,7 @@ static function X2DataTemplate CreateCivilianDisguise()
 	Template.CanBeBuilt = false;
 	Template.bInfiniteItem = true;
 	Template.Abilities.AddItem('CivilianDisguiseStats');
+	Template.Abilities.AddItem('ID_Unprotected');
 	Template.Abilities.AddItem('Phantom');
 	Template.ArmorTechCat = 'conventional';
 	Template.ArmorClass = 'basic';

@@ -19,6 +19,9 @@ var config int HOLOGRAPHIC_DISGUISE_HEALTH_BONUS;
 var config int HOLOGRAPHIC_DISGUISE_MOBILITY_BONUS;
 var config float HOLOGRAPHIC_DISGUISE_DETECTION_MODIFIER;
 
+var config int UNPROTECTED_DAMAGE_CHANCE;
+var config int UNPROTECTED_DAMAGE_AMOUNT;
+
 var localized string strTowerDetectionImmunityName;
 var localized string strTowerDetectionImmunityDesc;
 
@@ -29,6 +32,8 @@ static function array<X2DataTemplate> CreateTemplates()
 	Templates.AddItem(CivilianDisguiseStats());
 	Templates.AddItem(AdventDisguiseStats());
 	Templates.AddItem(HolographicDisguiseStats());
+	
+	Templates.AddItem(UnprotectedAbility());
 
 	return Templates;
 }
@@ -132,6 +137,38 @@ static function X2AbilityTemplate HolographicDisguiseStats()
 	PersistentStatChangeEffect.AddPersistentStatChange(eStat_DetectionModifier, default.HOLOGRAPHIC_DISGUISE_DETECTION_MODIFIER);
 	Template.AddTargetEffect(PersistentStatChangeEffect);
 	Template.AddTargetEffect(CreateTowerDetectionImmunityDisplayEffect());
+
+	Template.BuildNewGameStateFn = TypicalAbility_BuildGameState;
+
+	return Template;
+}
+
+static function X2AbilityTemplate UnprotectedAbility()
+{
+	local X2AbilityTemplate Template;
+	local X2AbilityTrigger Trigger;
+	local X2Effect_Unprotected DamageModifier;
+
+	`CREATE_X2ABILITY_TEMPLATE(Template, 'ID_Unprotected');
+	Template.IconImage = "img:///UILibrary_DisguiseIcons.UIPerk_stealth_shield_small_splinter";
+	
+	Template.AbilityTargetStyle = default.SelfTarget;
+	
+	Trigger = new class'X2AbilityTrigger_UnitPostBeginPlay';
+	Template.AbilityTriggers.AddItem(Trigger);
+
+	DamageModifier = new class'X2Effect_Unprotected';
+	DamageModifier.BuildPersistentEffect(1, true, true, true);
+	DamageModifier.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.GetMyLongDescription(), Template.IconImage, , , Template.AbilitySourceName);
+	DamageModifier.ExtraDamageAmount = default.UNPROTECTED_DAMAGE_AMOUNT;
+	DamageModifier.ExtraDamageChance = default.UNPROTECTED_DAMAGE_CHANCE;
+	Template.AddTargetEffect(DamageModifier);
+
+	Template.eAbilityIconBehaviorHUD = EAbilityIconBehavior_NeverShow;
+	Template.Hostility = eHostility_Neutral;
+	Template.bDisplayInUITacticalText = true;
+	Template.bDontDisplayInAbilitySummary = false;
+	Template.AbilitySourceName = 'eAbilitySource_Item';
 
 	Template.BuildNewGameStateFn = TypicalAbility_BuildGameState;
 
