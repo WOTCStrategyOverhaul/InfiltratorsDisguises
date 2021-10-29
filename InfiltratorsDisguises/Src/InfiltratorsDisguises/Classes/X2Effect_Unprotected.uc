@@ -11,16 +11,9 @@ function int GetDefendingDamageModifier(XComGameState_Effect EffectState, XComGa
 		// original attack didn't miss and dealt some damage
 		if (AppliedData.AbilityInputContext.PrimaryTarget.ObjectID > 0 && class'XComGameStateContext_Ability'.static.IsHitResultHit(AppliedData.AbilityResultContext.HitResult) && CurrentDamage != 0)
 		{
-			`LOG("Unprotected");
-
 			if (`SYNC_RAND_STATIC(100) < ExtraDamageChance)
 			{
-				`LOG("Coinflip Success");
 				return ExtraDamageAmount;
-			}
-			else
-			{
-				`LOG("Coinflip Failure");
 			}
 		}
 	}

@@ -19,8 +19,8 @@ TacticalText="<Bullet/> The Holographic Disguise makes a soldier nearly impossib
 [ID_Unprotected X2AbilityTemplate]
 LocFriendlyName="Unprotected"
 LocFlyOverText="Unprotected"
-LocHelpText="Each time the wearer takes damage, they have a 50% chance to take +1 additional damage."
-LocLongDescription="This soldier isn't wearing any armour to mitigate pain and blood loss. Each time they takes damage, they have a 50% chance to take +1 additional damage."
+LocHelpText="Each time the wearer takes damage, they have a <Ability:UNPROTECTED_DAMAGE_CHANCE/>% chance to take +<Ability:UNPROTECTED_DAMAGE_AMOUNT/> additional damage."
+LocLongDescription="This soldier isn't wearing any armour to mitigate pain and blood loss. Each time they take damage, they have a <Ability:UNPROTECTED_DAMAGE_CHANCE/>% chance to take +<Ability:UNPROTECTED_DAMAGE_AMOUNT/> additional damage."
 
 [CivilianDisguise_Schematic X2SchematicTemplate]
 m_strClassLabel="SQUAD"
