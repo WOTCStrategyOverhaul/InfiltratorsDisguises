@@ -65,6 +65,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\InfiltratorsDisguises\Classes\X2DownloadableContentInfo_InfiltratorsDisguises.uc" />
+    <Content Include="Src\InfiltratorsDisguises\Classes\X2Effect_Unprotected.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\InfiltratorsDisguises\Classes\X2Item_DisguiseArmors.uc">
       <SubType>Content</SubType>
     </Content>
@@ -72,7 +75,7 @@
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
-    <PropertyGroup>
+  <PropertyGroup>
     <SolutionRoot>$(MSBuildProjectDirectory)\..\</SolutionRoot>
     <ScriptsDir>$(SolutionRoot).scripts\</ScriptsDir>
     <BuildCommonRoot>$(ScriptsDir)X2ModBuildCommon\</BuildCommonRoot>

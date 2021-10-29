@@ -19,8 +19,8 @@ TacticalText="<Bullet/> The Holographic Disguise makes a soldier nearly impossib
 [ID_Unprotected X2AbilityTemplate]
 LocFriendlyName="Unprotected"
 LocFlyOverText="Unprotected"
-LocHelpText="After taking non-lethal damage, this soldier has a 50% chance to immediately fall unconscious."
-LocLongDescription="This soldier isn't wearing any armour to mitigate pain and blood loss. After taking non-lethal damage, they have a 50% chance to immediately fall unconscious."
+LocHelpText="Each time the wearer takes damage, they have a 50% chance to take +1 additional damage."
+LocLongDescription="This soldier isn't wearing any armour to mitigate pain and blood loss. Each time they takes damage, they have a 50% chance to take +1 additional damage."
 
 [CivilianDisguise_Schematic X2SchematicTemplate]
 m_strClassLabel="SQUAD"
