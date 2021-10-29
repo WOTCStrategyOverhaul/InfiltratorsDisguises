@@ -149,8 +149,8 @@ static function X2AbilityTemplate UnprotectedAbility()
 	local X2AbilityTrigger Trigger;
 	local X2Effect_Unprotected DamageModifier;
 
-	Template.IconImage = "img:///UILibrary_PerkIcons.UIPerk_sectoid_meleevulnerability"; // TODO: need a suitable icon
 	`CREATE_X2ABILITY_TEMPLATE(Template, 'ID_Unprotected');
+	Template.IconImage = "img:///UILibrary_DisguiseIcons.UIPerk_stealth_shield_small_splinter";
 	
 	Template.AbilityTargetStyle = default.SelfTarget;
 	
