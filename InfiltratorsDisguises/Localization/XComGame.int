@@ -30,3 +30,129 @@ m_strClassLabel="SQUAD"
 
 [HolographicDisguise_Schematic X2SchematicTemplate]
 m_strClassLabel="SQUAD"
+
+[PltCovert_Captain_Full_F_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Captain"
+
+[PltCovert_Captain_Full_M_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Captain"
+
+[PltCovert_General_Full_F_Torso X2BodyPartTemplate]
+DisplayName="ADVENT General"
+
+[PltCovert_General_Full_M_Torso X2BodyPartTemplate]
+DisplayName="ADVENT General"
+
+[PltCovert_Lancer_Full_F_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Stun Lancer"
+
+[PltCovert_Lancer_Full_M_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Stun Lancer"
+
+[PltCovert_Priest_Full_F_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Priest"
+
+[PltCovert_Priest_Full_M_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Priest"
+
+[PltCovert_Purifier_Full_F_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Purifier"
+
+[PltCovert_Purifier_Full_M_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Purifier"
+
+[PltCovert_Shieldbearer_Full_F_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Shieldbearer"
+
+[PltCovert_Shieldbearer_Full_M_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Shieldbearer"
+
+[PltCovert_Trooper_Full_F_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Trooper"
+
+[PltCovert_Trooper_Full_M_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Trooper"
+
+[XCom_Soldier_AdventDisguise_A_F_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Collaborator A"
+
+[XCom_Soldier_AdventDisguise_A_M_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Collaborator A"
+
+[XCom_Soldier_AdventDisguise_B_F_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Collaborator B"
+
+[XCom_Soldier_AdventDisguise_B_M_Torso X2BodyPartTemplate]
+DisplayName="ADVENT Collaborator B"
+
+[XCom_Soldier_CivilianDisguise_City_A_F_Torso X2BodyPartTemplate]
+DisplayName="City Civilian A"
+
+[XCom_Soldier_CivilianDisguise_City_A_M_Torso X2BodyPartTemplate]
+DisplayName="City Civilian A"
+
+[XCom_Soldier_CivilianDisguise_City_B_F_Torso X2BodyPartTemplate]
+DisplayName="City Civilian B"
+
+[XCom_Soldier_CivilianDisguise_City_B_M_Torso X2BodyPartTemplate]
+DisplayName="City Civilian B"
+
+[XCom_Soldier_CivilianDisguise_City_C_F_Torso X2BodyPartTemplate]
+DisplayName="City Civilian C"
+
+[XCom_Soldier_CivilianDisguise_City_C_M_Torso X2BodyPartTemplate]
+DisplayName="City Civilian C"
+
+[XCom_Soldier_CivilianDisguise_City_E_F_Torso X2BodyPartTemplate]
+DisplayName="City Civilian D"
+
+[XCom_Soldier_CivilianDisguise_City_E_M_Torso X2BodyPartTemplate]
+DisplayName="City Civilian D"
+
+[XCom_Soldier_CivilianDisguise_City_F_F_Torso X2BodyPartTemplate]
+DisplayName="City Civilian E"
+
+[XCom_Soldier_CivilianDisguise_City_F_M_Torso X2BodyPartTemplate]
+DisplayName="City Civilian E"
+
+[PwrCovert_Arms_Left_F X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Arms_Left_M X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Arms_Right_F X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Arms_Right_M X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Forearm_Left_F X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Forearm_Left_M X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Forearm_Right_F X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Forearm_Right_M X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Legs_F X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Legs_M X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Thighs_F X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Thighs_M X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Torso_F X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
+
+[PwrCovert_Torso_M X2BodyPartTemplate]
+DisplayName="Holographic Disguise"
