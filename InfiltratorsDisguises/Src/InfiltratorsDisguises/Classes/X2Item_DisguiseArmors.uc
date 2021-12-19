@@ -23,7 +23,7 @@ static function X2DataTemplate CreateCivilianDisguise()
 	local X2ArmorTemplate Template;
 
 	`CREATE_X2TEMPLATE(class'X2ArmorTemplate', Template, 'CivilianDisguise');
-	Template.strImage = "img:///UILibrary_DisguiseIcons.X2InventoryIcons.Inv_Disguise_Civilian";
+	Template.strImage = "img:///UILibrary_DisguiseInventory.Inv_Disguise_Civilian";
 	Template.StartingItem = false;
 	Template.CanBeBuilt = false;
 	Template.bInfiniteItem = true;
@@ -54,7 +54,7 @@ static function X2DataTemplate CreateAdventDisguise()
 	local X2ArmorTemplate Template;
 
 	`CREATE_X2TEMPLATE(class'X2ArmorTemplate', Template, 'AdventDisguise');
-	Template.strImage = "img:///UILibrary_DisguiseIcons.X2InventoryIcons.Inv_Disguise_Advent";
+	Template.strImage = "img:///UILibrary_DisguiseInventory.Inv_Disguise_Advent";
 	Template.ItemCat = 'armor';
 	Template.StartingItem = false;
 	Template.CanBeBuilt = false;
@@ -86,7 +86,7 @@ static function X2DataTemplate CreateHolographicDisguise()
 	local X2ArmorTemplate Template;
 
 	`CREATE_X2TEMPLATE(class'X2ArmorTemplate', Template, 'HolographicDisguise');
-	Template.strImage = "img:///UILibrary_DisguiseIcons.X2InventoryIcons.Inv_Disguise_Holo";
+	Template.strImage = "img:///UILibrary_DisguiseInventory.Inv_Disguise_Holo";
 	Template.ItemCat = 'armor';
 	Template.StartingItem = false;
 	Template.CanBeBuilt = false;

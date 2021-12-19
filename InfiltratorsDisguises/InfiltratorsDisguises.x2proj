@@ -34,6 +34,9 @@
     <Content Include="Config\XComStrategyTuning.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ContentOptions.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Content\StratCovert_Plt.upk">
       <SubType>Content</SubType>
     </Content>

@@ -150,7 +150,7 @@ static function X2AbilityTemplate UnprotectedAbility()
 	local X2Effect_Unprotected DamageModifier;
 
 	`CREATE_X2ABILITY_TEMPLATE(Template, 'ID_Unprotected');
-	Template.IconImage = "img:///UILibrary_DisguiseIcons.UIPerk_stealth_shield_small_splinter";
+	Template.IconImage = "img:///UILibrary_DisguisePerks.UIPerk_stealth_shield_small_splinter";
 	
 	Template.AbilityTargetStyle = default.SelfTarget;
 	

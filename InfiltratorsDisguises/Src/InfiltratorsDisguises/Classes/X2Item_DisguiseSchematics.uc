@@ -25,7 +25,7 @@ static function X2DataTemplate CreateCivilianDisguiseSchematic()
 	`CREATE_X2TEMPLATE(class'X2SchematicTemplate', Template, 'CivilianDisguise_Schematic');
 
 	Template.ItemCat = 'armor';
-	Template.strImage = "img:///UILibrary_DisguiseIcons.X2InventoryIcons.Inv_Disguise_Civilian";
+	Template.strImage = "img:///UILibrary_DisguiseInventory.Inv_Disguise_Civilian";
 	Template.PointsToComplete = 0;
 	Template.Tier = 0;
 	Template.OnBuiltFn = UpgradeItems;
@@ -43,7 +43,7 @@ static function X2DataTemplate CreateAdventDisguiseSchematic()
 	`CREATE_X2TEMPLATE(class'X2SchematicTemplate', Template, 'AdventDisguise_Schematic');
 
 	Template.ItemCat = 'armor';
-	Template.strImage = "img:///UILibrary_DisguiseIcons.X2InventoryIcons.Inv_Disguise_Advent";
+	Template.strImage = "img:///UILibrary_DisguiseInventory.Inv_Disguise_Advent";
 	Template.PointsToComplete = 0;
 	Template.Tier = 1;
 	Template.OnBuiltFn = UpgradeItems;
@@ -61,7 +61,7 @@ static function X2DataTemplate CreateHolographicDisguiseSchematic()
 	`CREATE_X2TEMPLATE(class'X2SchematicTemplate', Template, 'HolographicDisguise_Schematic');
 
 	Template.ItemCat = 'armor';
-	Template.strImage = "img:///UILibrary_DisguiseIcons.X2InventoryIcons.Inv_Disguise_Holo";
+	Template.strImage = "img:///UILibrary_DisguiseInventory.Inv_Disguise_Holo";
 	Template.PointsToComplete = 0;
 	Template.Tier = 2;
 	Template.OnBuiltFn = UpgradeItems;
