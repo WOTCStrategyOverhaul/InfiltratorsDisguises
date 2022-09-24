@@ -1,0 +1,158 @@
+[CivilianDisguise X2ArmorTemplate]
+FriendlyName="Déguisement civil".
+FriendlyNamePlural="Déguisement civil"
+BriefSummary="Ces vêtements civils peuvent servir de déguisements à nos agents sur le terrain. Ils rendront nos soldats plus difficiles à détecter par ADVENT, mais ne fourniront aucune protection."
+TacticalText="<Bullet/> Le déguisement civil rend un soldat plus difficile à détecter par les forces ennemies et réduit le temps d'infiltration.<br /> Cependant, ce déguisement est fin comme du papier. Les soldats qui le portent doivent éviter les engagements si possible, en utilisant leur mobilité et leur furtivité accrues."
+
+[AdventDisguise X2ArmorTemplate]
+FriendlyName="Déguisement d'ADVENT"
+FriendlyNamePlural="Déguisements d'ADVENT"
+BriefSummary="Les données glanées dans les implants neuronaux d'ADVENT nous permettent de faire passer des soldats pour des soldats de l'ADVENT. Les systèmes de surveillance seront totalement trompés grâce au transpondeur neural, mais les ennemis réels seront peut-être moins convaincus."
+TacticalText="<Bullet/> Le déguisement d'ADVENT rend un soldat beaucoup plus difficile à détecter par les forces ennemies et raccourcit le temps d'infiltration.<br />Les transpondeurs de ce déguisement rendent l'utilisateur invisible aux tours de sécurité ADVENT.<br />Le mélange d'alliage alien et d'acier utilisé par ADVENT offre une protection accrue par rapport aux déguisements civils, mais aucun bonus de mobilité."
+
+[HolographicDisguise X2ArmorTemplate]
+FriendlyName="Déguisement holographique"
+FriendlyNamePlural="Déguisements holographiques"
+BriefSummary="Utilisant une technologie holographique avancée, ce nouveau déguisement fournira une capacité de furtivité inégalée à nos agents sans compromettre leur capacité de survie ou leur mobilité."
+TacticalText="<Bullet/> Le déguisement holographique rend le soldat presque impossible à détecter par les forces ennemies et raccourcit le temps d'infiltration.\n<Bullet/> Ce déguisement contient également des transpondeurs ADVENT, permettant au soldat de passer sous les tours de sécurité ADVENT.\n<Bullet/> La coque extérieure en nano-tissé du déguisement holographique offre une protection supérieure à celle du déguisement ADVENT, tout en conservant la mobilité du déguisement civil."
+
+[ID_Unprotected X2AbilityTemplate]
+LocFriendlyName="Unprotected"
+LocFlyOverText="Unprotected" (sans protection)
+LocHelpText="Chaque fois que le porteur subit des dégâts, il a une <Ability:UNPROTECTED_DAMAGE_CHANCE/>% de chance de subir +<Ability:UNPROTECTED_DAMAGE_AMOUNT/> de dégâts supplémentaires."
+LocLongDescription="Ce soldat ne porte pas d'armure pour atténuer la douleur et la perte de sang. Chaque fois qu'il subit des dégâts, il a une <Ability:UNPROTECTED_DAMAGE_CHANCE/>% de chances de subir +<Ability:UNPROTECTED_DAMAGE_AMOUNT/> dégâts supplémentaires."
+
+[CivilianDisguise_Schematic X2SchematicTemplate]
+m_strClassLabel="SQUAD"
+
+[AdventDisguise_Schematic X2SchematicTemplate]
+m_strClassLabel="SQUAD"
+
+[HolographicDisguise_Schematic X2SchematicTemplate]
+m_strClassLabel="SQUAD"
+
+[PltCovert_Captain_Full_F_Torso X2BodyPartTemplate]
+DisplayName="Capitaine ADVENT"
+
+[PltCovert_Captain_Full_M_Torso X2BodyPartTemplate]
+DisplayName="Capitaine ADVENT"
+
+[PltCovert_General_Full_F_Torso X2BodyPartTemplate]
+DisplayName="Général ADVENT"
+
+[PltCovert_General_Full_M_Torso X2BodyPartTemplate]
+DisplayName="Général ADVENT"
+
+[PltCovert_Lancer_Full_F_Torso X2BodyPartTemplate]
+DisplayName="Lanceur ADVENT".
+
+[PltCovert_Lancer_Full_M_Torse X2BodyPartTemplate]
+DisplayName="Lanceur ADVENT".
+
+[PltCovert_Priest_Full_F_Torso X2BodyPartTemplate]
+DisplayName="Prêtre ADVENT".
+
+[PltCovert_Priest_Full_M_Torso X2BodyPartTemplate]
+DisplayName="Prêtre ADVENT".
+
+[PltCovert_Purifier_Full_F_Torso X2BodyPartTemplate]
+DisplayName="Purificateur ADVENT".
+
+[PltCovert_Purifier_Full_M_Torso X2BodyPartTemplate]
+DisplayName="Purificateur ADVENT".
+
+[PltCovert_Shieldbearer_Full_F_Torso X2BodyPartTemplate] 
+DisplayName="Porte-bouclier ADVENT".
+
+[PltCovert_Shieldbearer_Full_M_Torse X2BodyPartTemplate]
+DisplayName="Porte-bouclier ADVENT".
+
+[PltCovert_Trooper_Full_F_Torso X2BodyPartTemplate]
+DisplayName="Soldat ADVENT".
+
+[PltCovert_Trooper_Full_M_Torso X2BodyPartTemplate]
+DisplayName="Soldat ADVENT".
+
+[XCom_Soldier_AdventDisguise_A_F_Torso X2BodyPartTemplate]
+DisplayName="Collaborateur A d'ADVENT".
+
+[XCom_Soldier_AdventDisguise_A_M_Torso X2BodyPartTemplate]
+DisplayName="Collaborateur ADVENT A"
+
+[XCom_Soldier_AdventDisguise_B_F_Torso X2BodyPartTemplate]
+DisplayName="Collaborateur ADVENT B".
+
+[XCom_Soldier_AdventDisguise_B_M_Torso X2BodyPartTemplate]
+DisplayName="Collaborateur ADVENT B".
+
+[XCom_Soldier_CivilianDisguise_City_A_F_Torso X2BodyPartTemplate]
+DisplayName="Civilie A".
+
+[XCom_Soldier_CivilianDisguise_City_A_M_Torso X2BodyPartTemplate]
+DisplayName="Civile A".
+
+[XCom_Soldier_CivilianDisguise_City_B_F_Torso X2BodyPartTemplate]
+DisplayName="Civile B".
+
+[XCom_Soldier_CivilianDisguise_City_B_M_Torso X2BodyPartTemplate]
+DisplayName="Civile B".
+
+[XCom_Soldier_CivilianDisguise_City_C_F_Torso X2BodyPartTemplate]
+DisplayName="Civile C".
+
+[XCom_Soldier_CivilianDisguise_City_C_M_Torso X2BodyPartTemplate]
+DisplayName="Civile C".
+
+[XCom_Soldier_CivilianDisguise_City_E_F_Torso X2BodyPartTemplate]
+DisplayName="Civilie D"
+
+[XCom_Soldier_CivilianDisguise_City_E_M_Torso X2BodyPartTemplate]
+DisplayName="Civile D".
+
+[XCom_Soldier_CivilianDisguise_City_F_F_Torso X2BodyPartTemplate]
+DisplayName="Civile E".
+
+[XCom_Soldier_CivilianDisguise_City_F_M_Torso X2BodyPartTemplate]
+DisplayName="Civile E".
+
+[PwrCovert_Arms_Left_F X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Arms_Left_M X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Arms_Right_F X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Arms_Right_M X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Forearm_Left_F X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Forearm_Left_M X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Forearm_Right_F X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Forearm_Right_M X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Legs_F X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Legs_M X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Thighs_F X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Thighs_M X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Torso_F X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
+
+[PwrCovert_Torso_M X2BodyPartTemplate]
+DisplayName="Déguisement holographique".
